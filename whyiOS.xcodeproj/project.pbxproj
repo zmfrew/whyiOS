@@ -11,6 +11,10 @@
 		B67CD15220FFD02B00BF010F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67CD15020FFD02B00BF010F /* Main.storyboard */; };
 		B67CD15420FFD02D00BF010F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67CD15320FFD02D00BF010F /* Assets.xcassets */; };
 		B67CD15720FFD02D00BF010F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67CD15520FFD02D00BF010F /* LaunchScreen.storyboard */; };
+		B67CD16520FFD0BB00BF010F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67CD16420FFD0BB00BF010F /* Post.swift */; };
+		B67CD16720FFD0E800BF010F /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67CD16620FFD0E800BF010F /* PostController.swift */; };
+		B67CD16920FFD4BA00BF010F /* ReasonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67CD16820FFD4BA00BF010F /* ReasonTableViewController.swift */; };
+		B67CD16B20FFD67F00BF010F /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67CD16A20FFD67F00BF010F /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		B67CD15320FFD02D00BF010F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B67CD15620FFD02D00BF010F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B67CD15820FFD02D00BF010F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B67CD16420FFD0BB00BF010F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B67CD16620FFD0E800BF010F /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		B67CD16820FFD4BA00BF010F /* ReasonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonTableViewController.swift; sourceTree = "<group>"; };
+		B67CD16A20FFD67F00BF010F /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 		B67CD15F20FFD06300BF010F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B67CD16820FFD4BA00BF010F /* ReasonTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -79,6 +88,7 @@
 		B67CD16020FFD06800BF010F /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B67CD16620FFD0E800BF010F /* PostController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -87,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				B67CD15020FFD02B00BF010F /* Main.storyboard */,
+				B67CD16A20FFD67F00BF010F /* PostTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,6 +105,7 @@
 		B67CD16220FFD07300BF010F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B67CD16420FFD0BB00BF010F /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +193,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B67CD14D20FFD02B00BF010F /* AppDelegate.swift in Sources */,
+				B67CD16920FFD4BA00BF010F /* ReasonTableViewController.swift in Sources */,
+				B67CD16B20FFD67F00BF010F /* PostTableViewCell.swift in Sources */,
+				B67CD16520FFD0BB00BF010F /* Post.swift in Sources */,
+				B67CD16720FFD0E800BF010F /* PostController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKK87S6JNY;
-				INFOPLIST_FILE = whyiOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/whyiOS/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PKK87S6JNY;
-				INFOPLIST_FILE = whyiOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/whyiOS/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
